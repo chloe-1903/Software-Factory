@@ -17,6 +17,7 @@
         <module>../customer</module>
         <module>../logger</module>
         <module>../abstractTest</module>
+        <module>../bankApi</module>
     </modules>
     <name>ISA :: The Cookie Factory :: J2E Backend</name>
 

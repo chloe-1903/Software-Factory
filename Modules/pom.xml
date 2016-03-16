@@ -20,7 +20,7 @@
         <module>carts</module>
         <module>abstractTest</module>
         <module>payment</module>
-        <module>../bank</module>
+        <module>bank</module>
     </modules>
 
 

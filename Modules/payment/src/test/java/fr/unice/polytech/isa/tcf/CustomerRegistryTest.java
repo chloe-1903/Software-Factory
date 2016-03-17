@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
 import javax.ejb.EJB;
 import java.util.Optional;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 

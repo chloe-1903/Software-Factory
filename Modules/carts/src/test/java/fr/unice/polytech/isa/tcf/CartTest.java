@@ -16,6 +16,9 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+
 // component test framework import
 // java annotations
 // static import to lighten test writing

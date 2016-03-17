@@ -17,6 +17,7 @@ import javax.ejb.EJB;
 import java.util.HashSet;
 import java.util.Set;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.*;
 
@@ -59,6 +60,8 @@ public class CashierTest extends AbstractTCFTest {
 		double price = (3 * Cookies.CHOCOLALALA.getPrice()) + (2 * Cookies.DARK_TEMPTATION.getPrice());
 		assertEquals(price, order.getPrice(), 0.0);
 	}
+
+
 
 	@Test(expected = PaymentException.class)
 	public void identifyPaymentError() throws Exception {

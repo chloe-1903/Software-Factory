@@ -13,13 +13,14 @@
     <name>Modules</name>
 
     <modules>
+        <module>catalogue</module>
         <module>logger</module>
         <module>items</module>
         <module>customer</module>
         <module>carts</module>
-        <module>abstractTest</module>
         <module>payment</module>
         <module>bank</module>
+        <module>orders</module>
         <module>entities</module>
     </modules>
 

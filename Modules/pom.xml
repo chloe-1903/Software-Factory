@@ -15,12 +15,12 @@
     <modules>
         <module>logger</module>
         <module>items</module>
-        <module>database</module>
         <module>customer</module>
         <module>carts</module>
         <module>abstractTest</module>
         <module>payment</module>
         <module>bank</module>
+        <module>entities</module>
     </modules>
 
 

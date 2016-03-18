@@ -2,6 +2,7 @@ package fr.unice.polytech.isa.tcf.entities;
 
 import java.io.Serializable;
 
+
 public class Item implements Serializable {
 
 	private Cookies cookie;

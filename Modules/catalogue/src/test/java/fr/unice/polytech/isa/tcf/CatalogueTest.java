@@ -1,5 +1,6 @@
 package fr.unice.polytech.isa.tcf;
 
+import arquillian.AbstractTCFTest;
 import fr.unice.polytech.isa.tcf.entities.Cookies;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Test;
@@ -9,7 +10,6 @@ import javax.ejb.EJB;
 import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
-
 
 @RunWith(Arquillian.class)
 public class CatalogueTest extends AbstractTCFTest {
@@ -29,5 +29,4 @@ public class CatalogueTest extends AbstractTCFTest {
 		assertEquals(2, catalogue.exploreCatalogue("CHOCO").size());
 		assertEquals(1, catalogue.exploreCatalogue(Cookies.DARK_TEMPTATION.name()).size());
 	}
-
 }

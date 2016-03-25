@@ -11,6 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>customer</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>fr.unice.polytech.isa</groupId>

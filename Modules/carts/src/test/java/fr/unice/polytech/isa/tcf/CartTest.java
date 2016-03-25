@@ -6,6 +6,7 @@ import arquillian.AbstractTCFTest;
 import fr.unice.polytech.isa.tcf.entities.Cookies;
 import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.entities.Item;
+import fr.unice.polytech.isa.tcf.utils.Database;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Before;
 import org.junit.Test;
@@ -25,6 +26,9 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Arquillian.class)
 public class CartTest extends AbstractTCFTest {
+
+	@EJB
+	protected Database memory;
 
 	@EJB(name = "cart-stateless") private CartModifier cart;
 	@EJB CustomerRegistration registry;

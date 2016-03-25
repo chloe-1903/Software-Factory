@@ -5,6 +5,7 @@ import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;
 
 import javax.ejb.Local;
 
+
 @Local
 public interface CustomerRegistration {
 

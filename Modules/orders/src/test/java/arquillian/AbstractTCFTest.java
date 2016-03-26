@@ -2,7 +2,10 @@ package arquillian;
 
 import fr.unice.polytech.isa.tcf.CustomerFinder;
 import fr.unice.polytech.isa.tcf.CustomerRegistration;
+import fr.unice.polytech.isa.tcf.OrderProcessing;
+import fr.unice.polytech.isa.tcf.Tracker;
 import fr.unice.polytech.isa.tcf.components.CustomerRegistryBean;
+import fr.unice.polytech.isa.tcf.components.KitchenBean;
 import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.utils.Database;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -27,7 +30,12 @@ public abstract class AbstractTCFTest {
 				// Utils
 				.addPackage(Database.class.getPackage())
 				// Entities
-				.addPackage(Customer.class.getPackage());
+				.addPackage(Customer.class.getPackage())
+				// Components Interfaces
+				.addPackage(OrderProcessing.class.getPackage())
+				.addPackage(Tracker.class.getPackage())
+				// Components implementations
+				.addPackage(KitchenBean.class.getPackage());
 	}
 }
 

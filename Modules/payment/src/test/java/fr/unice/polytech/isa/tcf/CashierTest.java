@@ -62,7 +62,6 @@ public class CashierTest extends AbstractTCFTest {
 	}
 
 
-
 	@Test(expected = PaymentException.class)
 	public void identifyPaymentError() throws Exception {
 		cashier.payOrder(pat, items);

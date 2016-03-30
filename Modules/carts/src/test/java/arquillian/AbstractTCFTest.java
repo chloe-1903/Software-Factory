@@ -27,5 +27,4 @@ public abstract class AbstractTCFTest {
 				// Components implementations
 				.addPackage(CartBean.class.getPackage());
 	}
-
 }

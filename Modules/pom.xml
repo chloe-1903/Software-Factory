@@ -24,7 +24,6 @@
         <module>entities</module>
     </modules>
 
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <versions.tomee.embedded>1.7.3</versions.tomee.embedded>
@@ -63,7 +62,6 @@
             <url>https://repository.apache.org/content/groups/snapshots</url>
         </repository>
     </repositories>
-
 
     <dependencies>
         <!-- Dependencies for the OpenEJB framework -->
@@ -134,12 +132,11 @@
             <version>${versions.tomee.embedded}</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
-
-
     <build>
-        <finalName>Modules</finalName>
+        <finalName>tcf-backend</finalName>
         <defaultGoal>package</defaultGoal>
         <plugins>
             <plugin>
@@ -193,6 +190,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
-

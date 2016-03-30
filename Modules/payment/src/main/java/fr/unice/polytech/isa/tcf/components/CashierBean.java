@@ -6,7 +6,7 @@ import fr.unice.polytech.isa.tcf.entities.*;
 import fr.unice.polytech.isa.tcf.exceptions.PaymentException;
 import fr.unice.polytech.isa.tcf.utils.BankAPI;
 import fr.unice.polytech.isa.tcf.utils.Database;
-import fr.unice.polytech.isa.tcf.utils.ExternalPartnerException;
+import fr.unice.polytech.isa.tcf.exceptions.ExternalPartnerException;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;

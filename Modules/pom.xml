@@ -22,6 +22,7 @@
         <module>bank</module>
         <module>orders</module>
         <module>entities</module>
+        <module>webservices</module>
     </modules>
 
     <properties>
@@ -186,6 +187,10 @@
                     <tomeeClassifier>plus</tomeeClassifier>
                     <args>-Xmx512m -XX:PermSize=256m</args>
                     <deployOpenEjbApplication>true</deployOpenEjbApplication>
+
+                    <webapps>
+                        <webapp>fr.unice.polytech.isa.tcf:webservices:1.0-SNAPSHOT</webapp>
+                    </webapps>
                 </configuration>
             </plugin>
         </plugins>

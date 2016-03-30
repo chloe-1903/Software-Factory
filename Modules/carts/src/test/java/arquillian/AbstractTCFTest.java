@@ -4,6 +4,8 @@ import fr.unice.polytech.isa.tcf.CartModifier;
 import fr.unice.polytech.isa.tcf.components.CartBean;
 import fr.unice.polytech.isa.tcf.components.carts.CartStatefulBean;
 import fr.unice.polytech.isa.tcf.entities.Customer;
+import fr.unice.polytech.isa.tcf.exceptions.ExternalPartnerException;
+import fr.unice.polytech.isa.tcf.utils.Database;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
@@ -24,6 +26,8 @@ public abstract class AbstractTCFTest {
 				.addPackage(CartModifier.class.getPackage())
 				// Cart components
 				.addPackage(CartStatefulBean.class.getPackage())
+				.addPackage(ExternalPartnerException.class.getPackage())
+				.addPackage(Database.class.getPackage())
 				// Components implementations
 				.addPackage(CartBean.class.getPackage());
 	}

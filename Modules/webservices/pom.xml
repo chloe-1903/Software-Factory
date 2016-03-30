@@ -10,30 +10,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>carts</artifactId>
-    <packaging>jar</packaging>
-
-    <!--build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>2.2</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>test-jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build-->
+    <artifactId>webservices</artifactId>
+    <packaging>war</packaging>
 
     <dependencies>
         <dependency>
             <groupId>fr.unice.polytech.isa</groupId>
-            <artifactId>payment</artifactId>
+            <artifactId>items</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -43,21 +26,14 @@
         </dependency>
         <dependency>
             <groupId>fr.unice.polytech.isa</groupId>
-            <artifactId>items</artifactId>
+            <artifactId>payment</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>fr.unice.polytech.isa</groupId>
-            <artifactId>entities</artifactId>
+            <artifactId>carts</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>fr.unice.polytech.isa</groupId>
-            <artifactId>bank</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
-
 
 </project>

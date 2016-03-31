@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * <p>Classe Java pour validateResponse complex type.
  * 
- * <p>Le fragment de schÃ©ma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="validateResponse">
@@ -36,7 +36,7 @@ public class ValidateResponse {
     protected String orderId;
 
     /**
-     * Obtient la valeur de la propriÃ©tÃ© orderId.
+     * Obtient la valeur de la propriété orderId.
      * 
      * @return
      *     possible object is
@@ -48,7 +48,7 @@ public class ValidateResponse {
     }
 
     /**
-     * DÃ©finit la valeur de la propriÃ©tÃ© orderId.
+     * Définit la valeur de la propriété orderId.
      * 
      * @param value
      *     allowed object is

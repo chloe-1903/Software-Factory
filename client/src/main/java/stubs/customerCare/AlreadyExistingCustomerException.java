@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * <p>Classe Java pour AlreadyExistingCustomerException complex type.
  * 
- * <p>Le fragment de schÃ©ma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="AlreadyExistingCustomerException">
@@ -37,7 +37,7 @@ public class AlreadyExistingCustomerException {
     protected String message;
 
     /**
-     * Obtient la valeur de la propriÃ©tÃ© conflictingName.
+     * Obtient la valeur de la propriété conflictingName.
      * 
      * @return
      *     possible object is
@@ -49,7 +49,7 @@ public class AlreadyExistingCustomerException {
     }
 
     /**
-     * DÃ©finit la valeur de la propriÃ©tÃ© conflictingName.
+     * Définit la valeur de la propriété conflictingName.
      * 
      * @param value
      *     allowed object is
@@ -61,7 +61,7 @@ public class AlreadyExistingCustomerException {
     }
 
     /**
-     * Obtient la valeur de la propriÃ©tÃ© message.
+     * Obtient la valeur de la propriété message.
      * 
      * @return
      *     possible object is
@@ -73,7 +73,7 @@ public class AlreadyExistingCustomerException {
     }
 
     /**
-     * DÃ©finit la valeur de la propriÃ©tÃ© message.
+     * Définit la valeur de la propriété message.
      * 
      * @param value
      *     allowed object is

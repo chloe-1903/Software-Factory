@@ -12,7 +12,7 @@ public class ItemVerifier {
 
 		Item it = (Item) ctx.getParameters()[1];
 		if (it.getQuantity() <= 0) {
-			throw new RuntimeException("Inconsistent quantity!");
+			throw new RuntimeException("Inconsistent quantity! ");
 		}
 
 		return ctx.proceed();

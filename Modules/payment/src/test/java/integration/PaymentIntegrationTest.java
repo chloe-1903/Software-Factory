@@ -11,6 +11,7 @@ import fr.unice.polytech.isa.tcf.entities.Item;
 import fr.unice.polytech.isa.tcf.entities.Order;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -37,7 +38,7 @@ public class PaymentIntegrationTest extends AbstractTCFTest {
 		items.add(new Item(Cookies.DARK_TEMPTATION, 2));
 	}
 
-	@Test
+	@Test @Ignore
 	public void integrationBetweenCustomersAndOrders() throws Exception {
 		registration.register("john", "1234-896983");
 		Customer retrieved = finder.findByName("john").get();

@@ -36,6 +36,7 @@
         </dependency>
     </dependencies>
 
+
     <distributionManagement>
         <snapshotRepository>
             <id>snapshots</id>

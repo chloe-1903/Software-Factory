@@ -7,18 +7,6 @@
     <artifactId>tcf-backend</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>../Modules/orders</module>
-        <module>../Modules/items</module>
-        <module>../Modules/carts</module>
-        <module>../Modules/catalogue</module>
-        <module>../Modules/payment</module>
-        <module>../Modules/database</module>
-        <module>../Modules/customer</module>
-        <module>../Modules/logger</module>
-        <module>../Modules/abstractTest</module>
-        <module>../Modules/bank</module>
-    </modules>
     <name>ISA :: The Cookie Factory :: J2E Backend</name>
 
     <properties>

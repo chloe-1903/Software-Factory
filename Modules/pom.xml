@@ -5,7 +5,6 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-
     <groupId>fr.unice.polytech.isa</groupId>
     <artifactId>Modules</artifactId>
     <packaging>pom</packaging>
@@ -22,7 +21,7 @@
         <module>bank</module>
         <module>orders</module>
         <module>entities</module>
-        <module>webservices</module>
+        <module>webserv</module>
     </modules>
 
     <properties>
@@ -187,9 +186,8 @@
                     <tomeeClassifier>plus</tomeeClassifier>
                     <args>-Xmx512m -XX:PermSize=256m</args>
                     <deployOpenEjbApplication>true</deployOpenEjbApplication>
-
                     <webapps>
-                        <webapp>fr.unice.polytech.isa.tcf:webservices:1.0-SNAPSHOT</webapp>
+                        <webapp>fr.unice.polytech.isa:webserv:1.0-SNAPSHOT</webapp>
                     </webapps>
                 </configuration>
             </plugin>

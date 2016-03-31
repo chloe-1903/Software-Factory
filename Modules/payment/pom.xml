@@ -44,6 +44,12 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>erebe-vm16-snapshots</name>
+            <url>http://erebe-vm16.i3s.unice.fr/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>

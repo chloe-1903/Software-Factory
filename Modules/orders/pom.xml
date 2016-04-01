@@ -25,13 +25,13 @@
             <artifactId>catalogue</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>provided</scope>
-        </dependency>
+        </dependency><!--
         <dependency>
             <groupId>fr.unice.polytech.isa</groupId>
             <artifactId>entities</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>provided</scope>
-        </dependency>
+        </dependency>-->
 
     </dependencies>
     <distributionManagement>

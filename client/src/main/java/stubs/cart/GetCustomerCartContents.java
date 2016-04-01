@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * <p>Classe Java pour getCustomerCartContents complex type.
  * 
- * <p>Le fragment de schÃ©ma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="getCustomerCartContents">
@@ -36,7 +36,7 @@ public class GetCustomerCartContents {
     protected String customerName;
 
     /**
-     * Obtient la valeur de la propriÃ©tÃ© customerName.
+     * Obtient la valeur de la propriété customerName.
      * 
      * @return
      *     possible object is
@@ -48,7 +48,7 @@ public class GetCustomerCartContents {
     }
 
     /**
-     * DÃ©finit la valeur de la propriÃ©tÃ© customerName.
+     * Définit la valeur de la propriété customerName.
      * 
      * @param value
      *     allowed object is

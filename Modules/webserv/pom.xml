@@ -34,6 +34,11 @@
             <artifactId>carts</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>fr.unice.polytech.isa</groupId>
+            <artifactId>bank</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 

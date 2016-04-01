@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "CustomerCareServiceImplService", targetNamespace = "http://www.polytech.unice.fr/si/4a/isa/tcf/customer-care", wsdlLocation = "file:///Users/mosser/work/polytech/4A_ISA_TheCookieFactory/client/src/main/resources/CustomerCareWS.wsdl")
+@WebServiceClient(name = "CustomerCareServiceImplService", targetNamespace = "http://www.polytech.unice.fr/si/4a/isa/tcf/customer-care", wsdlLocation = "file:/C:/Users/user/Software-Factory/client/src/main/resources/CustomerCareWS.wsdl")
 public class CustomerCareServiceImplService
     extends Service
 {
@@ -30,7 +30,7 @@ public class CustomerCareServiceImplService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:///Users/mosser/work/polytech/4A_ISA_TheCookieFactory/client/src/main/resources/CustomerCareWS.wsdl");
+            url = new URL("file:/C:/Users/user/Software-Factory/client/src/main/resources/CustomerCareWS.wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

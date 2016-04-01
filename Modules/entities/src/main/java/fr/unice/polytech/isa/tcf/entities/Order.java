@@ -21,7 +21,7 @@ public class Order implements Serializable {
 	public OrderStatus getStatus() { return status; }
 	public void setStatus(OrderStatus status) { this.status = status; }
 	public String getId() { return id; }
-	public Customer getCustomer() { return null; }
+	public Customer getCustomer() { return customer; }
 	public Set<Item> getItems() { return items; }
 
 	public double getPrice() {

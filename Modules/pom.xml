@@ -57,9 +57,9 @@
     <repositories>
         <!-- Snapshot repository to access to the latest version of the OpenEJB framework -->
         <repository>
-            <id>apache-m2-snapshot</id>
-            <name>Apache Snapshot Repository</name>
-            <url>https://repository.apache.org/content/groups/snapshots</url>
+            <id>snapshots</id>
+            <name>erebe-vm16-snapshots</name>
+            <url>http://erebe-vm16.i3s.unice.fr/artifactory/libs-snapshot-local</url>
         </repository>
     </repositories>
 

@@ -29,6 +29,7 @@ public class Order implements Serializable {
 		for(Item item: items) {
 			result += (item.getQuantity() * item.getCookie().getPrice());
 		}
+
 		return result;
 	}
 

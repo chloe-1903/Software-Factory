@@ -38,7 +38,7 @@ public class PaymentIntegrationTest extends AbstractTCFTest {
 		items.add(new Item(Cookies.DARK_TEMPTATION, 2));
 	}
 
-	@Test @Ignore
+	@Test
 	public void integrationBetweenCustomersAndOrders() throws Exception {
 		registration.register("john", "1234-896983");
 		Customer retrieved = finder.findByName("john").get();
@@ -47,6 +47,4 @@ public class PaymentIntegrationTest extends AbstractTCFTest {
 		Order order = memory.getOrders().get(id);
 		assertTrue(retrieved.getOrders().contains(order));
 	}
-
-
 }

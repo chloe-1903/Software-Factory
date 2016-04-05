@@ -10,6 +10,7 @@ import javax.ejb.EJB;
 import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 @RunWith(Arquillian.class)
 public class CatalogueTest extends AbstractTCFTest {
@@ -25,6 +26,7 @@ public class CatalogueTest extends AbstractTCFTest {
 
 	@Test
 	public void regexpExploration() {
+		assertFalse(true);
 		assertEquals(0, catalogue.exploreCatalogue("unknown").size());
 		assertEquals(2, catalogue.exploreCatalogue("CHOCO").size());
 		assertEquals(1, catalogue.exploreCatalogue(Cookies.DARK_TEMPTATION.name()).size());

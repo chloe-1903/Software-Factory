@@ -1,4 +1,4 @@
-package fr.unice.polytech.isa.webservice;
+package fr.unice.polytech.isa.tcf.webservice;
 
 
 import fr.unice.polytech.isa.tcf.CatalogueExploration;

@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * <p>Classe Java pour register complex type.
  * 
- * <p>Le fragment de schÃ©ma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="register">
@@ -40,7 +40,7 @@ public class Register {
     protected String creditCardNumber;
 
     /**
-     * Obtient la valeur de la propriÃ©tÃ© customerName.
+     * Obtient la valeur de la propriété customerName.
      * 
      * @return
      *     possible object is
@@ -52,7 +52,7 @@ public class Register {
     }
 
     /**
-     * DÃ©finit la valeur de la propriÃ©tÃ© customerName.
+     * Définit la valeur de la propriété customerName.
      * 
      * @param value
      *     allowed object is
@@ -64,7 +64,7 @@ public class Register {
     }
 
     /**
-     * Obtient la valeur de la propriÃ©tÃ© creditCardNumber.
+     * Obtient la valeur de la propriété creditCardNumber.
      * 
      * @return
      *     possible object is
@@ -76,7 +76,7 @@ public class Register {
     }
 
     /**
-     * DÃ©finit la valeur de la propriÃ©tÃ© creditCardNumber.
+     * Définit la valeur de la propriété creditCardNumber.
      * 
      * @param value
      *     allowed object is

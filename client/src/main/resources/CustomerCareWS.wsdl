@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.polytech.unice.fr/si/4a/isa/tcf/customer-care" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://webservice.tcf.isa.polytech.unice.fr/" name="CustomerCareServiceImplService" targetNamespace="http://www.polytech.unice.fr/si/4a/isa/tcf/customer-care">
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.polytech.unice.fr/si/4a/isa/tcf/customer-care" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://webservice.tcf.isa.polytech.unice.fr/" name="CustomerCareServiceImplService" targetNamespace="http://www.polytech.unice.fr/si/4a/isa/tcf/customer-care">
     <wsdl:import location="CustomerCareWSType.wsdl" namespace="http://webservice.tcf.isa.polytech.unice.fr/">
     </wsdl:import>
     <wsdl:binding name="CustomerCareServiceImplServiceSoapBinding" type="ns1:CustomerCareService">
@@ -40,7 +39,7 @@
     </wsdl:binding>
     <wsdl:service name="CustomerCareServiceImplService">
         <wsdl:port binding="tns:CustomerCareServiceImplServiceSoapBinding" name="CustomerCareServiceImplPort">
-            <soap:address location="http://localhost:8080/tcf-backend/webservices/CustomerCareWS"/>
+            <soap:address location="http://localhost:8080/webserv-1.0-SNAPSHOT/webservices/CustomerCareWS"/>
         </wsdl:port>
     </wsdl:service>
 </wsdl:definitions>

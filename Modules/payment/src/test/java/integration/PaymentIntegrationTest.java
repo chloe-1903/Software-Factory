@@ -47,6 +47,4 @@ public class PaymentIntegrationTest extends AbstractTCFTest {
 		Order order = memory.getOrders().get(id);
 		assertTrue(retrieved.getOrders().contains(order));
 	}
-
-
 }

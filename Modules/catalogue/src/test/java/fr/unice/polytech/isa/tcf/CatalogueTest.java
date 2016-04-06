@@ -26,7 +26,7 @@ public class CatalogueTest extends AbstractTCFTest {
 
 	@Test
 	public void regexpExploration() {
-		assertFalse(true);
+		//assertFalse(true);
 		assertEquals(0, catalogue.exploreCatalogue("unknown").size());
 		assertEquals(2, catalogue.exploreCatalogue("CHOCO").size());
 		assertEquals(1, catalogue.exploreCatalogue(Cookies.DARK_TEMPTATION.name()).size());

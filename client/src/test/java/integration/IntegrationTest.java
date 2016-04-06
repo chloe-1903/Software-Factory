@@ -1,21 +1,20 @@
 package integration;
 
 import api.TCFPublicAPI;
+import org.junit.Assert;
 import org.junit.Before;
-import stubs.cart.CartWebService;
-import stubs.cart.CartWebServiceImplService;
-import stubs.customerCare.Cookies;
-import stubs.customerCare.AlreadyExistingCustomerException_Exception;
-import stubs.customerCare.CustomerCareService;
-import stubs.customerCare.CustomerCareServiceImplService;
+import org.junit.Test;
+import stubs.cart.*;
+import stubs.cart.Cookies;
+import stubs.customerCare.*;
 
 import javax.xml.ws.BindingProvider;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by user on 05/04/16.
- */
+import static org.junit.Assert.*;
+
 public class IntegrationTest {
     CartWebService cartWs;
     CustomerCareService customerWs;
@@ -27,24 +26,65 @@ public class IntegrationTest {
         customerWs=api.ccs;
     }
 
+    @Test
     public void normalUsageTest(){
-        List<Cookies> cookiesAvailable= customerWs.listAllRecipes();
-        System.out.println("The customer wants to see available cookies:");
-        for (Cookies c: cookiesAvailable)
-            System.out.println(" \t -"+c);
-        System.out.println("The customer registers:");
-        try {
+        //The customer lists all the cookies available
+        List<stubs.customerCare.Cookies> cookiesAvailable= customerWs.listAllRecipes();
+        assertTrue(cookiesAvailable.contains(stubs.customerCare.Cookies.CHOCOLALALA));
+        assertTrue(cookiesAvailable.contains(stubs.customerCare.Cookies.DARK_TEMPTATION));
+        assertTrue(cookiesAvailable.contains(stubs.customerCare.Cookies.SOO_CHOCOLATE));
+       try {
+            //He registers
             customerWs.register("Nicolas", "30896983");
-            System.out.println("The customer choose the first cookie:");
-            //cartWs.addItemToCustomerCart("Nicolas", cookiesAvailable.get(0));
+            //He chooses cookies
+            Item i = new Item();
+            i.setCookie(stubs.cart.Cookies.CHOCOLALALA);
+            i.setQuantity(10);
+            cartWs.addItemToCustomerCart("Nicolas", i);
+            Item i2 = new Item();
+            i2.setCookie(stubs.cart.Cookies.SOO_CHOCOLATE);
+            i2.setQuantity(50);
+            cartWs.addItemToCustomerCart("Nicolas", i2);
+            //He wants to see what he has chosen
+            List<Item> cart  = cartWs.getCustomerCartContents("Nicolas");
+           //Contains n'appelle pas la bonne version d'equals, on doit donc faire
+           int cpt=0;
+           for (Item item : cart)
+               if ((item.getCookie().equals(i.getCookie()) && item.getQuantity()==i.getQuantity())
+                       || (item.getCookie().equals(i2.getCookie()) && item.getQuantity()==i2.getQuantity())) cpt++;
+           assertEquals(2, cpt);
+
+            //He took too many SOO_CHOCOLATE, he removes them all
+            cartWs.removeItemToCustomerCart("Nicolas", i2);
+            //He checks if it has been removed
+            cart  = cartWs.getCustomerCartContents("Nicolas");
+           for (Item item: cart)
+                assertNotEquals(Cookies.SOO_CHOCOLATE, item.getCookie());
+            //He now wants to pay
+            String orderID=cartWs.validate("Nicolas");
+            //After a while, he wants to track his order
+            OrderStatus status=customerWs.track(orderID);
+            assertEquals(OrderStatus.VALIDATED, status);
         } catch (AlreadyExistingCustomerException_Exception e) {
             e.printStackTrace();
+        } catch (UnknownCustomerException_Exception e) {
+            e.printStackTrace();
+        } catch (PaymentException_Exception e) {
+            e.printStackTrace();
+        } catch (UnknownOrderId_Exception e) {
+            e.printStackTrace();
         }
-
-
     }
 
     public void customerRegisterTwice(){
+
+    }
+
+    public void customerValidateEmptyCart(){
+
+    }
+
+    public void customerShowNotExistingCart(){
 
     }
 }

@@ -14,6 +14,7 @@
         <versions.tomee.embedded>1.7.3</versions.tomee.embedded>
     </properties>
 
+
     <profiles>
         <profile>
             <!-- Use 'mvn -P stable' to activate stable dependencies (by default) -->

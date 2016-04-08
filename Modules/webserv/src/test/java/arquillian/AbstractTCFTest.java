@@ -14,6 +14,10 @@ import fr.unice.polytech.isa.tcf.interceptors.ItemVerifier;
 import fr.unice.polytech.isa.tcf.interceptors.Logger;
 import fr.unice.polytech.isa.tcf.utils.BankAPI;
 import fr.unice.polytech.isa.tcf.utils.Database;
+import fr.unice.polytech.isa.tcf.webservice.CartWebService;
+import fr.unice.polytech.isa.tcf.webservice.CartWebServiceImpl;
+import fr.unice.polytech.isa.tcf.webservice.CustomerCareService;
+import fr.unice.polytech.isa.tcf.webservice.CustomerCareServiceImpl;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
@@ -56,6 +60,10 @@ public abstract class AbstractTCFTest {
 				//.addPackage(CartBean.class.getPackage())
 				.addPackage(CustomerRegistryBean.class.getPackage())
 				.addPackage(CashierBean.class.getPackage())
+				.addPackage(CartWebServiceImpl.class.getPackage())
+				.addPackage(CartWebService.class.getPackage())
+				.addPackage(CustomerCareService.class.getPackage())
+				.addPackage(CustomerCareServiceImpl.class.getPackage())
 				.addPackage(KitchenBean.class.getPackage());
 	}
 }

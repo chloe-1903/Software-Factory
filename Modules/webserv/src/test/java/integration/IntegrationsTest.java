@@ -28,8 +28,8 @@ import static org.junit.Assert.assertTrue;
 public class IntegrationsTest extends AbstractTCFTest {
 
 
-	@EJB CustomerCareService customerWs;
-	@EJB CartWebService cartWs;
+	@EJB private CustomerCareService customerWs;
+	@EJB private CartWebService cartWs;
 
 	@Test
 	public void normalUsageTest(){

@@ -21,7 +21,7 @@ public class CatalogueTest extends AbstractTCFTest {
 	@Test
 	public void preMadeRecipesAreAVailable() {
 		Set<Cookies> premade = catalogue.listPreMadeRecipes();
-		assertEquals(3, premade.size());
+		assertEquals(4, premade.size());
 	}
 
 	@Test

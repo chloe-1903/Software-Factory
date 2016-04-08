@@ -62,7 +62,7 @@ public class IntegrationTest {
                 assertNotEquals(Cookies.SOO_CHOCOLATE, item.getCookie());
             //He now wants to pay
             String orderID=cartWs.validate("Nicolas");
-            //After a while, he wants to track his order
+            //He wants to track his order
             OrderStatus status=customerWs.track(orderID);
             assertEquals(OrderStatus.VALIDATED, status);
         } catch (AlreadyExistingCustomerException_Exception e) {
@@ -95,7 +95,7 @@ public class IntegrationTest {
             e.printStackTrace();
         }
     }
-    
+
     @Test
     public void customerShowNotExistingCart(){
         try {
@@ -108,6 +108,23 @@ public class IntegrationTest {
         } catch (UnknownCustomerException_Exception e) {
             e.printStackTrace();
         }
-
     }
+
+        /*    @Test(expected = UnknownOrderId_Exception.class)
+    public void customerValidateEmptyCart() throws Exception{
+        try {
+            //The client registers registers
+            customerWs.register("Paul", "10896983");
+            //He now wants to pay
+            String orderID=cartWs.validate("Paul");
+            System.out.println(orderID);
+        } catch (AlreadyExistingCustomerException_Exception e) {
+            e.printStackTrace();
+        } catch (UnknownCustomerException_Exception e) {
+            e.printStackTrace();
+        } catch (PaymentException_Exception e) {
+            e.printStackTrace();
+        }
+    }*/
+
 }

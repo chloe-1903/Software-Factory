@@ -4,8 +4,7 @@ public enum Cookies {
 
 	CHOCOLALALA("Chocolalala", 1.30),
 	DARK_TEMPTATION("Dark Temptation", 1.90),
-	SOO_CHOCOLATE("Soo Chocolate", 1.25),
-	MACADAMIA("Macadamia", 100.0);
+	SOO_CHOCOLATE("Soo Chocolate", 1.25);
 
 	private String name;
 	private double price;

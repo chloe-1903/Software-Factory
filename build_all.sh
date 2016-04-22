@@ -6,7 +6,7 @@ mvn clean package
 cd ..
 
 ## Building the j2e system
-cd j2e
+cd Modules
 mvn clean package
 cd ..
 

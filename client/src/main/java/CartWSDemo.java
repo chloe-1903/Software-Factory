@@ -43,7 +43,7 @@ public class CartWSDemo {
 		CartWebServiceImplService factory = new CartWebServiceImplService(wsdlLocation);
 		CartWebService ws = factory.getCartWebServiceImplPort();
 		System.out.println("#### Updating the endpoint address dynamically");
-		String address = "http://"+host+":"+port+"/tcf-backend/webservices/CartWS";
+		String address = "http://"+host+":"+port+"/webserv-1.0-SNAPSHOT/webservices/CartWS";
 		((BindingProvider) ws).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, address);
 		return ws;
 	}
